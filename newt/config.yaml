@@ -5,13 +5,12 @@ credits: Alex Moras <alex@codesix.net>
 url: https://docs.fossorial.io
 version: "1.12.5"
 slug: "newt"
-image: "ghcr.io/Ayakashi97/image-{arch}-hass-addon-newt"
+image: "ghcr.io/Ayakashi97/image-hass-addon-newt"
 boot: auto
 init: false
 arch:
   - aarch64
   - amd64
-  - armv7
 startup: services
 hassio_api: true
 docker_api: true
