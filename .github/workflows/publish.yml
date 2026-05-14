@@ -51,6 +51,10 @@ jobs:
           push: "true"
           version: ${{ github.event.release.tag_name }}
           cosign: "false"
+          build-args: |
+            BUILD_FROM=ghcr.io/home-assistant/${{ matrix.arch }}-base:latest
+            BUILD_ARCH=${{ matrix.arch }}
+            BUILD_VERSION=${{ github.event.release.tag_name }}
           context: ./newt
           file: ./newt/Dockerfile
 
