@@ -51,6 +51,8 @@ jobs:
           push: "true"
           version: ${{ github.event.release.tag_name }}
           cosign: "false"
+          context: newt
+          file: Dockerfile
 
   manifest:
     name: Publish multi-arch manifest
