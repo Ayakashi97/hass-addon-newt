@@ -5,7 +5,7 @@ credits: Alex Moras <alex@codesix.net>
 url: https://docs.fossorial.io
 version: "1.12.5"
 slug: "newt"
-image: "ghcr.io/janwinkelmann/image-{arch}-hass-addon-newt"
+image: "ghcr.io/Ayakashi97/image-{arch}-hass-addon-newt"
 boot: auto
 init: false
 arch:
