@@ -25,7 +25,7 @@ jobs:
         with:
           architectures: ${{ env.ARCHITECTURES }}
           image-name: ${{ env.IMAGE_NAME }}
-          registry-prefix: ghcr.io/${{ github.repository_owner }}
+          registry-prefix: ghcr.io/ayakashi97
 
   build:
     name: Build ${{ matrix.arch }} image
@@ -69,5 +69,5 @@ jobs:
           image-tags: |
             ${{ github.event.release.tag_name }}
             latest
-          registry-prefix: ghcr.io/${{ github.repository_owner }}
+          registry-prefix: ghcr.io/ayakashi97
           cosign: "false"
